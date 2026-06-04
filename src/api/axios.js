@@ -2,7 +2,7 @@ import axios from "axios";
 import { getToken, setAuthData, clearAuthData } from "./token.js";
 
 // 🔑 Use relative path for Vite dev proxy. Falls back to env var in production.
-const API_BASE_URL = import.meta.env.VITE_API_URL || "/api";
+const API_BASE_URL = import.meta.env.VITE_API_URL || "https://statio-nexus-server-1.onrender.com";
 
 const REQUEST_TIMEOUT = 15000;
 const SLOW_REQUEST_THRESHOLD = 5000;
