@@ -489,8 +489,7 @@ export default function DashboardView() {
       if (pulseTimeoutRef.current) clearTimeout(pulseTimeoutRef.current);
       pulseTimeoutRef.current = setTimeout(() => {}, 800);
     } catch (err) {
-      if (import.meta.env.DEV)
-        console.error("[Dashboard] fetch error:", err);
+      if (import.meta.env.DEV) console.error("[Dashboard] fetch error:", err);
       setError(
         err?.response?.data?.message ||
           err?.message ||
@@ -864,4 +863,3 @@ export default function DashboardView() {
     </div>
   );
 }
-

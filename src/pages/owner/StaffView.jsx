@@ -1191,4 +1191,3 @@ export default function StaffView() {
     </div>
   );
 }
-
